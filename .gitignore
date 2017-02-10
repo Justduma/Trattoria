@@ -1,0 +1,12 @@
+*.swp
+*~
+*.iws
+*.log
+*.psd
+.project
+.DS_Store
+.sass-cache
+.idea
+node_modules/
+bower_components/
+Source/

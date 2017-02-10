@@ -1,0 +1,28 @@
+@font-face {
+font-family: Verdana;
+src: local("Verdana"),
+url(../fonts/verdana.ttf);
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: Verdana Bold;
+src: local("Verdana Bold"),
+url(../fonts/verdanab.ttf);
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: PT Sans;
+src: local("PT Sans"),
+url(../fonts/PTsans/PTS55F.ttf);
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: PT Sans Bold;
+src: local("PT Sans Bold"),
+url(../fonts/PTsans/PTS75F.ttf);
+font-weight: bold;
+font-style: normal;
+}

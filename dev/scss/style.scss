@@ -1,0 +1,25 @@
+*,
+*:after,
+*:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'scaffolding.scss';
+@import 'blocks/btn.scss';
+// blocks
+@import 'blocks/page-header.scss';
+@import 'blocks/header-menu.scss';
+@import 'blocks/page-logo.scss';
+@import 'blocks/stock.scss';
+@import 'blocks/good.scss';
+@import 'blocks/decor-line.scss';
+@import 'blocks/title-section.scss';
+@import 'blocks/about-us.scss';
+@import 'blocks/quality-list.scss';
+@import 'blocks/reviews.scss';
+@import 'blocks/reviews-slider.scss';
+@import 'blocks/contacts.scss';
