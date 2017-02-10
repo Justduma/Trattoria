@@ -1,0 +1,80 @@
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: Verdana;
+  src: local("Verdana"), url(../fonts/verdana.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: Verdana Bold;
+  src: local("Verdana Bold"), url(../fonts/verdanab.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: PT Sans;
+  src: local("PT Sans"), url(../fonts/PTsans/PTS55F.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: PT Sans Bold;
+  src: local("PT Sans Bold"), url(../fonts/PTsans/PTS75F.ttf);
+  font-weight: bold;
+  font-style: normal; }
+
+body {
+  font-family: "PT Sans", "Arial",sans-serif;
+  color: #444444; }
+  @media (max-width: 767px) {
+    body {
+      font-size: 14px;
+      line-height: 24px; } }
+  @media (min-width: 768px) {
+    body {
+      font-size: 16px;
+      line-height: 30px; } }
+  @media (min-width: 1150px) {
+    body {
+      font-size: 16px;
+      line-height: 30px; } }
+
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 767px) {
+    .container {
+      width: 81%;
+      min-width: 260px; } }
+  @media (min-width: 768px) {
+    .container {
+      width: 87%;
+      min-width: 668px; } }
+  @media (min-width: 1150px) {
+    .container {
+      width: 91%;
+      min-width: 1050px;
+      max-width: 1280px; } }
+
+.btn {
+  display: block;
+  height: 52px;
+  font-family: 'PT Sans',"Arial",sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #444444;
+  text-transform: uppercase;
+  border: 2px solid #444444;
+  text-align: center;
+  background: #ffffff; }
+
+.btn:hover {
+  color: #ffffff;
+  background: #444444; }
