@@ -13,6 +13,12 @@ var temp_popup_class = '';
 popup_close_btn.addEventListener('click', function(event) {
   popup.classList.remove(temp_popup_class);
   });
+//close popup-not-enter;
+var popup_not_enter_close = document.querySelector('.popup-not-enter__close');
+
+  popup_close_btn.addEventListener('click', function(event) {
+    popup.classList.remove(temp_popup_class);
+    });
 
 //slaider
 var slaider = document.querySelector('.slaider'),
@@ -63,3 +69,6 @@ var slaider = document.querySelector('.slaider'),
           return
         }
       });
+//-----------------------------------------
+
+    
