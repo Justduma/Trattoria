@@ -1,6 +1,7 @@
 body {
-  font-family: "PT Sans", "Arial",sans-serif;
-  color: #444444;
+  font-family: Geometria, "Arial",sans-serif;
+  color: $colorWhite;
+background-color: #f8f6ef;
 
   @media ($mobile) {
     font-size: 14px;
@@ -28,7 +29,7 @@ body {
   }
   @media ($desktop) {
     width: 91%;
-    min-width: 1050px;
+    min-width: 1150px;
     max-width: 1280px;
   }
 }

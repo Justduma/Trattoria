@@ -1,0 +1,44 @@
+.main {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 40px;
+}
+.main__logo {
+  @include size(19px, 27px);
+  background: url(../img/main__logo.png) no-repeat center;
+}
+.main__text {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $colorPage;
+  margin-top: 22px;
+}
+.main__slaider {
+margin-top: 26px;
+}
+
+@media ($tablet) {
+  .main__text {
+    max-width: 540px;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+@media ($mobile) {
+  .main {
+    padding-top: 20px;
+  }
+  .main__text {
+    margin-top: 12px;
+    padding: 0 10px;
+  }
+}
+@media ("max-width: 530px") {
+  .main__text {
+    width: 320px;
+  }
+}

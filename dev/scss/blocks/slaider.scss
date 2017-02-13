@@ -1,0 +1,111 @@
+.slaider {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1180px;
+  min-width: 320px;
+}
+.slaider__title {
+  width: 100%;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.slaider__list-inner {
+  width: 94%;
+  overflow: hidden;
+}
+.slaider__btn--right,
+.slaider__btn--left {
+  @include size(20px, 27px);
+}
+.slaider__btn--left {
+  background: url(../img/slaider__btn--left.png) no-repeat center;
+}
+.slaider__btn--right {
+    background: url(../img/slaider__btn--right.png) no-repeat center;
+}
+
+.slaider__list{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200%;
+  transition: ease-in-out 1s;
+}
+.slaider__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  @include size(271px, 390px);
+  background: url(../img/slaider-border-item.png) no-repeat center;
+  text-align: center;
+}
+.slaider__image {
+  background-color: #f8f6ef;
+  margin: auto;
+}
+.slaider__item span{
+  font-family: Garamond;
+  color: $colorPage;
+  font-size: 27px;
+  line-height: 32px;
+  font-style: italic;
+  margin-bottom: -80px;
+}
+.slaider__item button {
+  margin-bottom: -10px;
+}
+.control-inner {
+  width: 60%;
+  margin-top: 34px;
+}
+.slaider__control-radio {
+  width: 50px;
+  @include push--auto();
+
+  & input {
+    display: none;
+  }
+}
+.slaider__radio--left span,
+.slaider__radio--right span {
+  display: inline-block;
+  @include size(12px,12px);
+  border-radius: 50%;
+  background-color: #de817a;
+  margin: 0 5px;
+}
+.slaider__control-radio input:checked ~ span {
+  background-color: #801520;
+}
+
+@media ("max-width: 900px") {
+  .slaider__list{
+    width: 300%;
+  }
+  .slaider__list-inner {
+    width: 88%;
+  }
+  .slaider__control-radio {
+    display: none;
+  }
+}
+@media ("max-width: 680px") {
+    .slaider__list {
+      width: 600%;
+    }
+    .slaider__list-inner {
+      width: 84%;
+      max-width: 380px;
+    }
+}

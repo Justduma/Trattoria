@@ -1,17 +1,20 @@
 .btn {
   display: block;
-  height: 52px;
-  @include fontSans();
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: bold;
-  color: #444444;
+  width: 121px;
+  height: 34px;
+  font-family: Geometria;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: lighter;
+  color: #ffffff;
   text-transform: uppercase;
-  border: 2px solid #444444;
   text-align: center;
-  background: #ffffff;
+  padding-top: 3px;
+  background: $colorPage;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 2px 0 0 #520c13;
 }
 .btn:hover {
-  color: #ffffff;
-  background: #444444;
+  background: #520c13;
 }

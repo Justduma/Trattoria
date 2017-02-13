@@ -5,9 +5,18 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+@import '_reset.scss';
 @import 'fonts.scss';
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'scaffolding.scss';
 @import 'blocks/btn.scss';
 // blocks
+@import 'blocks/page-header.scss';
+@import 'blocks/form.scss';
+@import 'blocks/main.scss';
+@import 'blocks/slaider.scss';
+@import 'blocks/page-footer.scss';
+@import 'blocks/slaider-popup.scss';
+@import 'blocks/popup-not-enter.scss';
+@import 'blocks/slaides-js.scss';

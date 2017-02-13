@@ -1,0 +1,213 @@
+.popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 840px;
+  background: url(../img/popup-phone.jpg) no-repeat center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  color: #000000;
+  font-family: Geometria;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 20px;
+}
+.popup__inner {
+  display: flex;
+  width: 90%;
+  max-width: 1180px;
+  position: relative;
+  @include push--auto();
+  padding-top: 160px;
+}
+.popup__close-btn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  @include size(32px, 32px);
+  background: url(../img/popup-close.png) no-repeat center;
+}
+.popup__image-wrap {
+  width: 40%;
+  height: 467px;
+  border-right: 2px solid #000000;
+}
+.popup__image {
+  @include size(360px, 467px);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top,
+  center bottom;
+  margin-left: auto;
+}
+//--------------------------------------------------------
+.purcari, .cricova, .vartelly, .asconi, .radacini, .trattoria {
+  display: block;
+}
+.purcari .popup__image {
+  background-image: url(../img/Purcari.png),
+  url(../img/bottle-ascony.png);// <<<----Bottle Purcari
+}
+//------------
+.cricova .popup__image {
+  background-image: url(../img/Cricova.png),
+  url(../img/bottle-ascony.png);// <<<----Bottle Cricova
+}
+//--------------
+.vartelly .popup__image {
+  background-image: url(../img/Vartelly.png),
+  url(../img/bottle-ascony.png);// <<<----Bottle Vartelly
+}
+//------------
+.asconi .popup__image {
+  background-image: url(../img/Asconi.png),
+  url(../img/bottle-ascony.png);
+}
+//------------
+.radacini .popup__image {
+  background-image: url(../img/Radacini.png),
+  url(../img/bottle-ascony.png);// <<<----Bottle Radacini
+}
+//------------
+.trattoria .popup__image {
+  background-image: url(../img/Trattoria.png),
+  url(../img/bottle-ascony.png);// <<<----Bottle Trattoria
+}
+//-------------------------------------------------------
+.popup__form {
+  width: 59%;
+  height: 467px;
+  padding-left: 75px;
+}
+.popup__content {
+  @include size(382px, 162px);
+  background: url(../img/popup_spoon.png) no-repeat right bottom;
+}
+.popup__title {
+  font-family: Garamond;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  font-style: italic;
+}
+.popup__wines {
+  @include size(312px, 20px);
+    background: url(../img/popup-ellips.png) no-repeat right center;
+    margin-top: 22px;
+    font-weight: bold;
+    padding-top: 4px;
+}
+.popup__text {
+  margin-top: 76px;
+  font-weight: bold;
+}
+.popup__popup-form {
+  margin-top: 94px;
+}
+.popup-form__input {
+  height: 32px;
+  color: #000;
+  font-weight: bold;
+  margin-top: 12px;
+}
+.popup-form__input span {
+  height: 20px;
+  display: inline-block;
+  font-size: 15px;
+  width: 118px;
+  vertical-align: middle;
+  text-align: left;
+}
+.popup-form__input input {
+  width: 200px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid #000;
+  background: transparent;
+}
+.popup-form__btn {
+  margin-top: 45px;
+}
+@media ("max-width: 800px") {
+  .popup__inner {
+    flex-direction: column;
+    padding: 0;
+}
+.popup__image-wrap {
+  width: auto;
+  height: 100px;
+  border-right: none;
+
+}
+.popup__image {
+  @include size(auto, 100px);
+  margin-left: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.purcari .popup__image {
+  background-image: url(../img/Purcari.png);
+}
+.cricova .popup__image {
+  background-image: url(../img/Cricova.png);
+}
+.vartelly .popup__image {
+  background-image: url(../img/Vartelly.png);
+}
+.asconi .popup__image {
+  background-image: url(../img/Asconi.png);
+}
+.radacini .popup__image {
+  background-image: url(../img/Radacini.png);
+}
+.trattoria .popup__image {
+  background-image: url(../img/Trattoria.png);
+}
+.popup__form {
+  width: 390px;
+  height: 467px;
+  padding: 0;
+  @include push--auto();
+}
+.popup-form__btn {
+  margin-top: 25px;
+  @include push--auto();
+}
+}
+@media ("max-width: 460px") {
+  .popup__close-btn {
+    top: 25px;
+    right: 25px;
+  }
+  .popup__form {
+    width: 310px;
+  }
+  .popup__content {
+    @include size(300px, 140px);
+    background-image: none;
+  }
+  .popup__title {
+    text-align: center;
+  }
+  .popup__wines {
+    @include size(90%, 20px);
+  }
+  .popup__text {
+    margin-top: 26px;
+    text-align: center;
+  }
+  .popup__popup-form {
+    margin-top: 34px;
+  }
+  .popup-form__input {
+    margin-top: 12px;
+  }
+  .popup-form__input input {
+    width: 145px;
+  }
+}

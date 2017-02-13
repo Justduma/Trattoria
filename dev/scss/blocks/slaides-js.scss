@@ -1,0 +1,39 @@
+@media ("min-width: 901px") {
+  .slaider-1{
+    left: 0;
+  }
+  .slaider-2{
+    left: -100%;
+  }
+}
+@media ("max-width: 900px") {
+  .slaider-tb-1{
+    left: 0;
+  }
+  .slaider-tb-2{
+    left: -100%;
+  }
+  .slaider-tb-3{
+    left: -200%;
+  }
+}
+@media ("max-width: 680px")   {
+  .slaider-mb-1{
+    left: 0;
+  }
+  .slaider-mb-2{
+    left: -100%;
+  }
+  .slaider-mb-3{
+    left: -200%;
+  }
+  .slaider-mb-4{
+    left: -300%;
+  }
+  .slaider-mb-5{
+    left: -400%;
+  }
+  .slaider-mb-6{
+    left: -500%;
+  }
+}

@@ -1,28 +1,45 @@
 @font-face {
-font-family: Verdana;
-src: local("Verdana"),
-url(../fonts/verdana.ttf);
+font-family: Geometria;
+src: local("Geometria Medium"),
+url(../fonts/Geometria-Medium.otf);
 font-weight: normal;
 font-style: normal;
 }
 @font-face {
-font-family: Verdana Bold;
-src: local("Verdana Bold"),
-url(../fonts/verdanab.ttf);
+font-family: Geometria;
+src: local("Geometria Bold"),
+url(../fonts/Geometria-Bold.otf);
 font-weight: bold;
 font-style: normal;
 }
 @font-face {
-font-family: PT Sans;
-src: local("PT Sans"),
-url(../fonts/PTsans/PTS55F.ttf);
+font-family: Geometria;
+src: local("Geometria Light"),
+url(../fonts/Geometria-Light.otf);
+font-weight: lighter;
+font-style: normal;
+}
+@font-face {
+font-family: Garamond;
+src: local("Adobe Garamond Pro"),
+local("AGaramondPro-Regular"),
+url(../fonts/AGaramondPro-Regular.otf);
 font-weight: normal;
 font-style: normal;
 }
 @font-face {
-font-family: PT Sans Bold;
-src: local("PT Sans Bold"),
-url(../fonts/PTsans/PTS75F.ttf);
+font-family: Garamond;
+src: local("Adobe Garamond Pro"),
+local("AGaramondPro-Italic"),
+url(../fonts/AGaramondPro-Italic.otf);
+font-weight: normal;
+font-style: italic;
+}
+@font-face {
+font-family: Garamond;
+src: local("Adobe Garamond Pro"),
+local("AGaramondPro-BoldItalic"),
+url(../fonts/AGaramondPro-BoldItalic.otf);
 font-weight: bold;
-font-style: normal;
+font-style: italic;
 }

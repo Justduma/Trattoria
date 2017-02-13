@@ -9,17 +9,7 @@
   display: $display;
   position: $pos;
 }
-@mixin fontSans() {
- font-family: 'PT Sans',"Arial",sans-serif;
-}
-@mixin fontVerdana() {
- font-family: 'Verdana',"Arial",sans-serif;
- font-weight: normal;
-}
-@mixin fontVerdanaBold() {
- font-family: 'Verdana Bold',"Arial",sans-serif;
- font-weight: bold;
-}
+
 @mixin size($width: 50px, $height: 50px) {
   width: $width;
   height: $height;

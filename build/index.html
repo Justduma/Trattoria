@@ -2,84 +2,119 @@
 <html lang="ro">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Trattoria</title>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trattoria</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-  <section class="page-header">
-    <div class="page-header__content container">
-      <div class="page-header__logo"></div>
-      <form action="" class="page-header__form">
-        <p class="form__data">Miercuri 19.00</p>
-        <span>150 lei / pers.</span>
-        <div><span>Nume:</span><input type="text" name="" value="">Gheorghe</div>
-        <div><span>Nr. de contact:</span><input type="text" name="" value=""></div>
-        <button class="form__btn btn" type="button" name="button">Rezervează</button>
-      </form>
-    </div>
-    <div class="page-header__footer">
-      <div class="page-header__price-link">Cunoaște vinurile Moldovei, descarcă cartea vinurilor aici</div>
-    </div>
-  </section>
-  <section class="main">
-    <div class="main__logo"></div>
-    <p class="">Degustatii la comanda. Program special. Bucate alese</p>
-    <div class="slaider">
-      <p class="">Oferte din partea vinăriilor</p>
-      <ul class="slaider__list">
-        <li class="slaider__item">
-          <span>350 lei/persoană</span>
-          <buttom class="btn">Detalii</buttom>
-        </li>
-        <li class="slaider__item">
-          <span>350 lei/persoană</span>
-          <buttom class="btn">Detalii</buttom>
-        </li>
-        <li class="slaider__item">
-          <span>350 lei/persoană</span>
-          <buttom class="btn">Detalii</buttom>
-        </li>
-        <li class="slaider__item">
-          <span>350 lei/persoană</span>
-          <buttom class="btn">Detalii</buttom>
-        </li>
-        <li class="slaider__item">
-          <span>350 lei/persoană</span>
-          <buttom class="btn">Detalii</buttom>
-        </li>
-        <li class="slaider__item">
-          <span>350 lei/persoană</span>
-          <buttom class="btn">Detalii</buttom>
-        </li>
-      </ul>
-      <div class="slaider__control-btn">
-        <div class="slaider__btn--left"></div>
-        <div class="slaider__btn--right"></div>
+    <section class="page-header">
+        <div class="page-header__content">
+            <div class="page-header__logo"></div>
+            <form action="" class="page-header__form form">
+                <p class="form__data">Miercuri 19.00</p>
+                <span class="form__price">150 lei / pers.</span>
+                <div class="form__input"><span>Nume:</span><input type="text" name="" value=""></div>
+                <div class="form__input"><span>Nr. de contact:</span><input type="text" name="" value=""></div>
+                <button class="form__btn btn" type="button" name="button">Rezervează</button>
+            </form>
+        </div>
+        <div class="page-header__footer">
+            <p class="page-header__price-link">Cunoaște vinurile Moldovei, descarcă cartea vinurilor <a href="#"> aici</a></p>
+        </div>
+    </section>
+    <section class="main">
+        <div class="main__logo"></div>
+        <p class="main__text">Degustatii la comanda. Program special. Bucate alese</p>
+        <div class="main__slaider slaider">
+            <p class="slaider__title">Oferte din partea vinăriilor</p>
+            <div class="slaider__btn--left" data-number="11"></div>
+            <div class="slaider__list-inner">
+                <ul class="slaider__list slaider-1">
+                    <li class="slaider__item">
+                        <img src="img/Purcari.png" width="124px" height="65px" alt="Purcari">
+                        <span>350 lei/persoană</span>
+                        <button name="purcari" class="btn">Detalii</button>
+                    </li>
+                    <li class="slaider__item">
+                        <img src="img/Cricova.png" width="124px" height="53px" alt="Cricova">
+                        <span>350 lei/persoană</span>
+                        <button name="cricova" class="btn">Detalii</button>
+                    </li>
+                    <li class="slaider__item">
+                        <img src="img/Vartelly.png" width="104px" height="66px" alt="Vartelly">
+                        <span>350 lei/persoană</span>
+                        <button name="vartelly" class="btn">Detalii</button>
+                    </li>
+                    <li class="slaider__item">
+                        <img src="img/Asconi.png" width="90px" height="78px" alt="Asconi">
+                        <span>350 lei/persoană</span>
+                        <button name="asconi" class="btn">Detalii</button>
+                    </li>
+                    <li class="slaider__item">
+                        <img src="img/Radacini.png" width="133px" height="44px" alt="Radacini">
+                        <span>350 lei/persoană</span>
+                        <button name="radacini" class="btn">Detalii</button>
+                    </li>
+                    <li class="slaider__item">
+                        <img src="img/Trattoria.png" width="99px" height="65px" alt="Trattoria">
+                        <span>350 lei/persoană</span>
+                        <button name="trattoria" class="btn">Detalii</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="slaider__btn--right" data-number="12"></div>
+            <div class="control-inner">
+                <div class="slaider__control-radio">
+                    <label class="slaider__radio--left"><input type="radio" name="slaid" value="1" checked ><span data-number="21"></span></label>
+                    <label class="slaider__radio--right"><input type="radio" name="slaid" value="2"><span data-number="22" ></span></label>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="page-footer">
+        <div class="map"></div>
+        <div class="contacts">
+            <div class="contacts__logo"></div>
+            <div class="contacts__links">
+                <p>Dacă mai aveți intrebări: </p>
+                <a href="+373 68 300 825" class="tel">+373 68 300 825</a>
+                <a href="info@trattoria.md" class="email">info@trattoria.md</a>
+                <a href="www.trattoria.md" class="site">www.trattoria.md</a>
+            </div>
+            <a href="https://www.facebook.com/" class="contacts__fb"></a>
+        </div>
+    </section>
+    <div class="popup">
+      <div class="popup__inner">
+        <a href="#" class="popup__close-btn"></a>
+        <div class="popup__image-wrap">
+          <div class="popup__image"></div>
+        </div>
+        <div class="popup__form">
+          <div class="popup__content">
+            <h3 class="popup__title">În program:</h3>
+            <p class="popup__wines">Vinuri</p>
+            <p class="popup__text">Bucate incluse:   Focacio, nuci  în asortiment.</p>
+          </div>
+          <form class="popup__popup-form popup-form" action="index.html" method="post">
+            <div class="popup-form__input"><span>Nume:</span><input type="text" name="" value=""></div>
+            <div class="popup-form__input"><span>Nr. de contact:</span><input type="text" name="" value=""></div>
+            <button class="popup-form__btn btn" type="button" name="button">comandă</button>
+          </form>
+        </div>
       </div>
-      <div class="slaider__control-radio">
-        <div class="slaider__radio--left"></div>
-        <div class="slaider__radio--right"></div>
+    </div>
+    <div class="popup-not-enter">
+      <div class="popup-not-enter__image">
+        <div class="popup-not-enter__close"></div>
       </div>
     </div>
-  </section>
-  <section class="page-footer">
-    <div class="map"></div>
-    <div class="contacts">
-      <div class="contacts__logo"></div>
-      <div class="contacts__links">
-        <p>Dacă mai aveți intrebări: </p>
-        <a href="+373 68 300 825" class="tel">+373 68 300 825</a>
-        <a href="info@trattoria.md" class="email">info@trattoria.md</a>
-        <a href="www.trattoria.md" class="site">www.trattoria.md</a>
-      </div>
-      <div class="contacts__fb"></div>
-    </div>
-  </section>
+      <script src="js/main.js"></script>
 </body>
 
 </html>
