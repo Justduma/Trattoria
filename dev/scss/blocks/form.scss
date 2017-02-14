@@ -1,80 +1,87 @@
 .form {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  @include size(389px, 358px);
-  background: url(../img/form-phone.png) no-repeat center;
-  padding-top: 100px;
-  font-family: Geometria;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    @include size(389px, 358px);
+    background: url("../img/form-phone.png") no-repeat center;
+    padding-top: 100px;
+    font-family: Geometria;
 }
+
 .form__data {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: $colorPage;
-  margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $colorPage;
+    margin-top: 15px;
 }
+
 .form__price {
-  color: $colorPage;
-  font-size: 16px;
-  line-height: 20px;
-  margin-top: 10px;
-  margin-bottom: 7px;
+    color: $colorPage;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 7px;
 }
+
 .form__input {
-  height: 32px;
-  color: #000;
-  font-weight: bold;
-  margin-top: 12px;
+    height: 32px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 12px;
 }
+
 .form__input span {
-  height: 20px;
-  display: inline-block;
-  font-size: 15px;
-  width: 118px;
-  vertical-align: middle;
-  text-align: left;
+    height: 20px;
+    display: inline-block;
+    font-size: 15px;
+    width: 118px;
+    vertical-align: middle;
+    text-align: left;
 }
+
 .form__input input {
-  width: 200px;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  border-bottom: 1px solid #000;
-  background: transparent;
+    width: 200px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #000;
+    background: transparent;
 }
+
 .form__btn {
-  margin-top: 20px;
+    margin-top: 20px;
 }
-
-
 @media ($mobile) {
-  .form {
-
-  }
+    .form {}
 }
 @media ("max-width: 415px") {
-  .form {
-      @include size(300px, 280px);
-      background-size: contain;
-      padding-top: 76px;
+    .form {
+        @include size(300px, 280px);
+        background-size: contain;
+        padding-top: 76px;
     }
+
     .form__data {
-      margin-top: 10px;
+        margin-top: 10px;
     }
+
     .form__price {
-      margin-top: 6px;
+        margin-top: 6px;
     }
+
     .form__input {
-      margin-top: 0px;
+        margin-top: 0;
     }
+
     .form__input input {
-      width: 140px;
+        width: 140px;
     }
+
     .form__btn {
-      margin-top: 10px;
+        margin-top: 10px;
     }
 }

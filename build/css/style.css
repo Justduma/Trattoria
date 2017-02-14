@@ -145,7 +145,7 @@ body {
   height: 700px;
   width: 100%;
   min-width: 320px;
-  background: #801520 url(../img/top_phone.jpg) no-repeat;
+  background: #801520 url("../img/top_phone.jpg") no-repeat;
   background-size: cover;
   padding-top: 92px; }
 
@@ -161,7 +161,7 @@ body {
 .page-header__logo {
   width: 388px;
   height: 212px;
-  background: url(../img/logo.png) no-repeat center;
+  background: url("../img/logo.png") no-repeat center;
   margin-left: 8%; }
 
 .page-header__form {
@@ -179,9 +179,9 @@ body {
   height: 92px;
   margin-left: auto;
   margin-right: auto;
-  background-repeat: no-repeat, no-repeat;
-  background-image: url(../img/elem-left.png), url(../img/elem-right.png);
-  background-position: left center, right center;
+  background-repeat: no-repeat, no-repeat;
+  background-image: url(../img/elem-left.png), url("../img/elem-right.png");
+  background-position: left center, right center;
   text-align: center;
   padding-top: 31px;
   font-family: Geometria;
@@ -233,7 +233,7 @@ body {
   align-items: center;
   width: 389px;
   height: 358px;
-  background: url(../img/form-phone.png) no-repeat center;
+  background: url("../img/form-phone.png") no-repeat center;
   padding-top: 100px;
   font-family: Geometria; }
 
@@ -290,7 +290,7 @@ body {
   .form__price {
     margin-top: 6px; }
   .form__input {
-    margin-top: 0px; }
+    margin-top: 0; }
   .form__input input {
     width: 140px; }
   .form__btn {
@@ -306,7 +306,7 @@ body {
 .main__logo {
   width: 19px;
   height: 27px;
-  background: url(../img/main__logo.png) no-repeat center; }
+  background: url("../img/main__logo.png") no-repeat center; }
 
 .main__text {
   font-weight: bold;
@@ -360,16 +360,16 @@ body {
   width: 94%;
   overflow: hidden; }
 
-.slaider__btn--right,
-.slaider__btn--left {
+.slaider__btn--left,
+.slaider__btn--right {
   width: 20px;
   height: 27px; }
 
 .slaider__btn--left {
-  background: url(../img/slaider__btn--left.png) no-repeat center; }
+  background: url("../img/slaider__btn--left.png") no-repeat center; }
 
 .slaider__btn--right {
-  background: url(../img/slaider__btn--right.png) no-repeat center; }
+  background: url("../img/slaider__btn--right.png") no-repeat center; }
 
 .slaider__list {
   position: relative;
@@ -377,7 +377,8 @@ body {
   flex-direction: row;
   justify-content: space-around;
   width: 200%;
-  transition: ease-in-out 1s; }
+  left: 0;
+  transition: ease-in-out 0.5s; }
 
 .slaider__item {
   display: flex;
@@ -386,7 +387,7 @@ body {
   justify-content: space-around;
   width: 271px;
   height: 390px;
-  background: url(../img/slaider-border-item.png) no-repeat center;
+  background: url("../img/slaider-border-item.png") no-repeat center;
   text-align: center; }
 
 .slaider__image {
@@ -450,7 +451,7 @@ body {
 
 .map {
   width: 50%;
-  background: url(../img/map.jpg) no-repeat center; }
+  background: url("../img/map.jpg") no-repeat center; }
 
 .contacts {
   padding: 104px 0 0 15%; }
@@ -458,7 +459,7 @@ body {
 .contacts__logo {
   width: 203px;
   height: 136px;
-  background: url(../img/contacts-logo.png) no-repeat center; }
+  background: url("../img/contacts-logo.png") no-repeat center; }
 
 .contacts__links {
   margin-top: 50px;
@@ -480,7 +481,7 @@ body {
   display: block;
   width: 43px;
   height: 43px;
-  background: url(../img/fb_icon.png) no-repeat center;
+  background: url("../img/fb_icon.png") no-repeat center;
   margin-top: 43px; }
 
 @media (max-width: 960px) {
@@ -492,7 +493,7 @@ body {
   .map {
     width: 100%;
     height: 480px;
-    background: url(../img/map.jpg) no-repeat center;
+    background: url("../img/map.jpg") no-repeat center;
     background-size: cover; }
   .contacts {
     padding: 30px 0;
@@ -514,7 +515,7 @@ body {
   position: fixed;
   width: 100%;
   height: 840px;
-  background: url(../img/popup-phone.jpg) no-repeat center;
+  background: url("../img/popup-phone.jpg") no-repeat center;
   background-size: cover;
   top: 0;
   left: 0;
@@ -540,7 +541,7 @@ body {
   right: 50px;
   width: 32px;
   height: 32px;
-  background: url(../img/popup-close.png) no-repeat center; }
+  background: url("../img/popup-close.png") no-repeat center; }
 
 .popup__image-wrap {
   width: 40%;
@@ -551,29 +552,34 @@ body {
   width: 360px;
   height: 467px;
   background-repeat: no-repeat, no-repeat;
-  background-position: center top, center bottom;
+  background-position: center top, center bottom;
   margin-left: auto; }
 
-.purcari, .cricova, .vartelly, .asconi, .radacini, .trattoria {
+.asconi,
+.cricova,
+.purcari,
+.radacini,
+.trattoria,
+.vartelly {
   display: block; }
 
 .purcari .popup__image {
-  background-image: url(../img/Purcari.png), url(../img/bottle-ascony.png); }
+  background-image: url(../img/Purcari.png), url("../img/bottle-ascony.png"); }
 
 .cricova .popup__image {
-  background-image: url(../img/Cricova.png), url(../img/bottle-ascony.png); }
+  background-image: url(../img/Cricova.png), url("../img/bottle-ascony.png"); }
 
 .vartelly .popup__image {
-  background-image: url(../img/Vartelly.png), url(../img/bottle-ascony.png); }
+  background-image: url(../img/Vartelly.png), url("../img/bottle-ascony.png"); }
 
 .asconi .popup__image {
-  background-image: url(../img/Asconi.png), url(../img/bottle-ascony.png); }
+  background-image: url(../img/Asconi.png), url("../img/bottle-ascony.png"); }
 
 .radacini .popup__image {
-  background-image: url(../img/Radacini.png), url(../img/bottle-ascony.png); }
+  background-image: url(../img/Radacini.png), url("../img/bottle-ascony.png"); }
 
 .trattoria .popup__image {
-  background-image: url(../img/Trattoria.png), url(../img/bottle-ascony.png); }
+  background-image: url(../img/Trattoria.png), url("../img/bottle-ascony.png"); }
 
 .popup__form {
   width: 59%;
@@ -583,7 +589,7 @@ body {
 .popup__content {
   width: 382px;
   height: 162px;
-  background: url(../img/popup_spoon.png) no-repeat right bottom; }
+  background: url("../img/popup_spoon.png") no-repeat right bottom; }
 
 .popup__title {
   font-family: Garamond;
@@ -595,7 +601,7 @@ body {
 .popup__wines {
   width: 312px;
   height: 20px;
-  background: url(../img/popup-ellips.png) no-repeat right center;
+  background: url("../img/popup-ellips.png") no-repeat right center;
   margin-top: 22px;
   font-weight: bold;
   padding-top: 4px; }
@@ -649,17 +655,17 @@ body {
     background-repeat: no-repeat;
     background-position: center center; }
   .purcari .popup__image {
-    background-image: url(../img/Purcari.png); }
+    background-image: url("../img/Purcari.png"); }
   .cricova .popup__image {
-    background-image: url(../img/Cricova.png); }
+    background-image: url("../img/Cricova.png"); }
   .vartelly .popup__image {
-    background-image: url(../img/Vartelly.png); }
+    background-image: url("../img/Vartelly.png"); }
   .asconi .popup__image {
-    background-image: url(../img/Asconi.png); }
+    background-image: url("../img/Asconi.png"); }
   .radacini .popup__image {
-    background-image: url(../img/Radacini.png); }
+    background-image: url("../img/Radacini.png"); }
   .trattoria .popup__image {
-    background-image: url(../img/Trattoria.png); }
+    background-image: url("../img/Trattoria.png"); }
   .popup__form {
     width: 390px;
     height: 467px;
@@ -710,8 +716,8 @@ body {
   position: relative;
   width: 400px;
   height: 400px;
-  margin: 100px auto 0 auto;
-  background: url(../img/popup-not-enter.png) no-repeat center center; }
+  margin: 100px auto 0;
+  background: url("../img/popup-not-enter.png") no-repeat center center; }
 
 .popup-enter__close {
   position: absolute;
@@ -719,10 +725,10 @@ body {
   right: 10px;
   width: 32px;
   height: 32px;
-  background: url(../img/popup-close2.png) no-repeat center; }
+  background: url("../img/popup-close2.png") no-repeat center; }
 
 .popup-not-enter .popup-enter__image {
-  background-color: url(../img/popup-not-enter.png); }
+  background-color: url("../img/popup-not-enter.png"); }
 
 @media (min-width: 901px) {
   .slaider-1 {

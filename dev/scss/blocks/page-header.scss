@@ -1,96 +1,99 @@
 .page-header {
-  position: relative;
-  height: 700px;
-  width: 100%;
-  min-width: 320px;
-  background: $colorPage url(../img/top_phone.jpg) no-repeat;
-  background-size: cover;
-  padding-top: 92px;
+    position: relative;
+    height: 700px;
+    width: 100%;
+    min-width: 320px;
+    background: $colorPage url("../img/top_phone.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 92px;
 }
 
 .page-header__content {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1180px;
-  width: 94%;
-  height: 400px;
-  @include push--auto();
-}
-.page-header__logo {
-  @include size(388px, 212px);
-  background: url(../img/logo.png) no-repeat center;
-  margin-left: 8%;
-}
-.page-header__form {
-  margin-top: 42px;
-}
-.page-header__footer {
-  position: absolute;
-  bottom: 0;
-  height: 92px;
-  width: 100%;
-  background-color: $colorPage;
-}
-.page-header__price-link {
-  width: 604px;
-  height: 92px;
-  @include push--auto();
-  background-repeat: no-repeat,
-  no-repeat;
-  background-image: url(../img/elem-left.png),
-  url(../img/elem-right.png);
-  background-position: left center,
-   right center;
-   text-align: center;
-   padding-top: 31px;
-   font-family: Geometria;
-   font-weight: lighter;
-   font-size: 17px;
-   line-height: 22px;
-}
-.page-header__price-link a {
-  color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1180px;
+    width: 94%;
+    height: 400px;
+    @include push--auto();
 }
 
+.page-header__logo {
+    @include size(388px, 212px);
+    background: url("../img/logo.png") no-repeat center;
+    margin-left: 8%;
+}
+
+.page-header__form {
+    margin-top: 42px;
+}
+
+.page-header__footer {
+    position: absolute;
+    bottom: 0;
+    height: 92px;
+    width: 100%;
+    background-color: $colorPage;
+}
+
+.page-header__price-link {
+    width: 604px;
+    height: 92px;
+    @include push--auto();
+    background-repeat: no-repeat, no-repeat;
+    background-image: url(../img/elem-left.png), url("../img/elem-right.png");
+    background-position: left center, right center;
+    text-align: center;
+    padding-top: 31px;
+    font-family: Geometria;
+    font-weight: lighter;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.page-header__price-link a {
+    color: #ffffff;
+}
 @media ($tablet) {
-  .page-header__logo {
-      @include size(300px, 160px);
-      background-size: contain;
-    margin-left: 0;
-  }
+    .page-header__logo {
+        @include size(300px, 160px);
+        background-size: contain;
+        margin-left: 0;
+    }
 }
 @media ($mobile) {
-  .page-header {
-    padding-top: 0;
-    padding-bottom: 92px;
-    height: auto;
-  }
-  .page-header__content {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 680px;
-  }
-  .page-header__logo {
+    .page-header {
+        padding-top: 0;
+        padding-bottom: 92px;
+        height: auto;
+    }
+
+    .page-header__content {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 680px;
+    }
+
+    .page-header__logo {
         @include size(388px, 212px);
+    }
 
-
-  }
-  .page-header__form {
-    margin-top: 0;
-  }
+    .page-header__form {
+        margin-top: 0;
+    }
 }
 @media ("max-width: 640px") {
-  .page-header__price-link {
-    background-image: none;
-    width: 90%;
-  }
+    .page-header__price-link {
+        background-image: none;
+        width: 90%;
+    }
 }
 @media ("max-width: 415px") {
-  .page-header__content {
-    height: 520px;
-  }
-  .page-header__logo {
-      @include size(300px, 160px);
+    .page-header__content {
+        height: 520px;
+    }
+
+    .page-header__logo {
+        @include size(300px, 160px);
     }
 }

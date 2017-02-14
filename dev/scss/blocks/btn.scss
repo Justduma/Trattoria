@@ -1,20 +1,21 @@
 .btn {
-  display: block;
-  width: 121px;
-  height: 34px;
-  font-family: Geometria;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: lighter;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 3px;
-  background: $colorPage;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 2px 0 0 #520c13;
+    display: block;
+    width: 121px;
+    height: 34px;
+    font-family: Geometria;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: lighter;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 3px;
+    background: $colorPage;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 0 0 #520c13;
 }
+
 .btn:hover {
-  background: #520c13;
+    background: #520c13;
 }
